@@ -46,11 +46,28 @@ const profilesList = document.getElementById("profile-list");
 buttonProfile.addEventListener("click", function () {
   for (let profile of team) {
     const messageHtml = `
-    <li class='mx-3'>
-     ${profile.name}
-     ${profile.role}
-     ${profile.image}
-    </li>
+    
+    
+    <div class='col-4 text-center my-2 rounded'>
+      <div class='rounded'>
+      <img src="./img (4)/img/${profile.image}" alt="">
+        
+      </div>
+
+      <div class='sfondo-chiaro rounded-bottom'>
+        <div>
+          <h3>
+            ${profile.name}
+          </h3>
+        </div>
+        <div>
+          ${profile.role}
+        </div>
+      </div>
+                
+    </div>
+    
+    
     `;
 
     profilesList.innerHTML += messageHtml;

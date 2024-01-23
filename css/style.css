@@ -14,7 +14,7 @@ img{
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(88, 81, 138);
+    background-color: rgb(81, 107, 138);
     min-height: 100vh;
 }
 
@@ -44,3 +44,6 @@ a{
 }
 
 
+.sfondo-chiaro{
+    background-color: rgb(215, 235, 250);
+}
