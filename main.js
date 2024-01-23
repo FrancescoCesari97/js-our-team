@@ -50,7 +50,7 @@ buttonProfile.addEventListener("click", function () {
     
     <div class='col-4 text-center my-2 rounded'>
       <div class='rounded'>
-      <img src="./img (4)/img/${profile.image}" alt="">
+      <img src="./img (4)/img/${profile.image}" alt="" class='rounded-top'>
         
       </div>
 
