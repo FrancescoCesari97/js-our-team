@@ -48,9 +48,9 @@ buttonProfile.addEventListener("click", function () {
     const messageHtml = `
     
     
-    <div class='col-4 text-center my-2 rounded'>
-      <div class='rounded'>
-      <img src="./img (4)/img/${profile.image}" alt="" class='rounded-top'>
+    <div class='col-4 text-center my-4 '>
+      <div >
+      <img src="./img (4)/img/${profile.image}" alt="" class='rounded-top shadow-lg'>
         
       </div>
 
