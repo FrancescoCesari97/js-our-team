@@ -32,7 +32,27 @@ const team = [
 ];
 
 // * stampare su console le informazioni di nome, ruolo e la stringa della foto
+for (let profile of team) {
+  console.log(profile.name);
+  console.log(profile.role);
+  console.log(profile.image);
+}
 
-console.log(team[0].name);
-console.log(team[0].role);
-console.log(team[0].image);
+// * stampare le stesse informazioni su DOM sottoforma di stringhe
+
+const buttonProfile = document.getElementById("stampa-credenziali");
+const profilesList = document.getElementById("profile-list");
+
+buttonProfile.addEventListener("click", function () {
+  for (let profile of team) {
+    const messageHtml = `
+    <li class='mx-3'>
+     ${profile.name}
+     ${profile.role}
+     ${profile.image}
+    </li>
+    `;
+
+    profilesList.innerHTML += messageHtml;
+  }
+});
