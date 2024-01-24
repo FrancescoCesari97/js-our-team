@@ -1,18 +1,12 @@
-Viene fornito un file js in cui è definito un array di oggetti che rappresentano i membri del team.
-Ogni membro ha le informazioni necessarie per stampare le relative informazioni: Nome, Ruolo e Foto.
+## Snack 1:
 
-## MILESTONE 1:
+Dwayne Johnson ci ha chiesto di creare i segnaposto per il tavolo degli invitati alla sua mega festa vip.
 
-stampare su console le informazioni di nome, ruolo e la stringa della foto
+Ci ha lasciato il nome del tavolo ("Tavolo Vip") e la lista degli invitati in ordine di posto:
 
-## MILESTONE 2:
+La tipografia per stampare il tutto vuole che le mandiamo una lista di ospiti in un formato specifico, per cui dobbiamo fare in modo che ogni ospite sia un oggetto javascript che ha come attributi:
 
-stampare le stesse informazioni su DOM sottoforma di stringhe
-
-## BONUS 1:
-
-trasformare la stringa foto in una immagine effettiva
-
-## BONUS 2:
-
-organizzare i singoli membri in card/schede
+- nome del tavolo,
+- nome dell'ospite,
+- posto occupato.
+- Generiamo e stampiamo in console l'array di oggetti per i segnaposto.
