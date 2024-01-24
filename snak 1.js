@@ -1,3 +1,5 @@
+// * esercizio 1
+
 const vips = [
   "Dwayne Johnson",
   "Brad Pitt",
