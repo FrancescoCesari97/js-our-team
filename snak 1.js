@@ -24,4 +24,12 @@ const vipsInfo = vips.map((vip, posto, tavolo) => {
   };
 });
 
+function generateGuestObject(vip, posto, tavolo) {
+  return {
+    Nome: vip,
+    posto_occupato: posto,
+    nome_del_tavolo: "Tavolo Vip",
+  };
+}
+
 console.log(vipsInfo);
