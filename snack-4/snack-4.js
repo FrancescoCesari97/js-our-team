@@ -38,10 +38,50 @@ const teams = [
 
 // - Valorizzare le proprietà dei punti fatti e dei falli subiti con numeri randomici
 
-for (let { score, foul, name } of teams) {
+for (let team of teams) {
+  team.score = Math.floor(Math.random() * 30 + 1);
+  team.foul = Math.floor(Math.random() * 20 + 1);
+}
+
+/* for (let { score, foul, name } of teams) {
+  teams.score = Math.floor(Math.random() * 30 + 1);
+  teams.foul = Math.floor(Math.random() * 20 + 1);
+  console.log(
+    `i punti fatti da ${name} sono ${score} e i falli subiti sono ${foul}`
+  );
+} */
+
+// - Creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti, recuperandoli con il destructuring, e stampiamo tutto in console.
+
+const teamButton = document.getElementById("stampa-team");
+const teamList = document.getElementById("team-list");
+
+/* for (let { score, foul, name } of teams) {
   score = Math.floor(Math.random() * 30 + 1);
   foul = Math.floor(Math.random() * 20 + 1);
-  console.log(
-    `i punti fatti da ${name} sono ${score} e i falli fatti sono ${foul}`
-  );
-}
+  console.log(name, foul);
+} */
+
+let newTeams = teams.map((item) => {
+  let { name, foul } = item;
+  return {
+    name: name,
+    foul: foul,
+  };
+});
+
+console.log(newTeams);
+
+teamButton.addEventListener("click", function () {
+  for (let squadra of newTeams) {
+    const team = `
+      <li>${squadra.name}, falli subiti: ${squadra.foul}</li>
+      
+     
+      
+      
+    `;
+
+    teamList.innerHTML += team;
+  }
+});
