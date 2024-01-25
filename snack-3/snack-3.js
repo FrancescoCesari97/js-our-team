@@ -28,11 +28,13 @@ const bicycles = [
   },
 ];
 
+/// selezionare solo il peso delle biciclette
+
+for (let { peso } of bicycles) {
+  console.log(peso);
+}
 //- Stampare in console la bici con peso minore utilizzando destructuring e template literal
 
-for (let weight of bicycles) {
-  console.log(weight);
-}
-//let [{ peso }] = bicycles;
+let { nome, peso } = bicycles[3];
 
-//console.log(peso);
+console.log(`La bicicletta più leggera è la ${nome}`);
